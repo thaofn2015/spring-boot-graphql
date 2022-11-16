@@ -1,0 +1,10 @@
+type Book {
+	id: ID!
+	title: String!
+	text: String!
+	author: Author!
+}
+
+extend type Query {
+	findBookById(id: String): Book!
+}
